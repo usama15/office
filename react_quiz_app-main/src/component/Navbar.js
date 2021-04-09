@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import stockape_logo from '../assets/stockape_logo.png'
 import './Style.css'
+import './style.css.map'
 
 const Navbar = () => {
     return (
@@ -71,14 +72,14 @@ const Navbar = () => {
             </nav>
             <nav class="navbar">
                 <a href="#" class="sidebar-toggler">
-                    <i data-feather="menu"></i>
+                    <i data-feather="menu"/>
                 </a>
                 <div class="navbar-content">
                     <form class="search-form">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">
-                                    <i data-feather="search"></i>
+                                    <i data-feather="search"/>
                                 </div>
                             </div>
                             <input type="text" class="form-control" id="navbarForm" placeholder="Search here..." />
@@ -87,7 +88,7 @@ const Navbar = () => {
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="font-weight-medium ml-1 mr-1">English</span>
+                                <i class="flag-icon flag-icon-us mt-1" title="us"/> <span class="font-weight-medium ml-1 mr-1">English</span>
                             </a>
 
                         </li>
@@ -300,7 +301,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-            
+
 
         </div>
     )

@@ -11,12 +11,12 @@ import i9 from '../assets/9.png'
 import i10 from '../assets/10.png'
 import ApexCharts from 'apexcharts'
 import Graph from "../component/graph";
-
+import '../App.css'
 
 class Home extends React.Component {
     render() {
         return (
-            <div >
+            <div className='main' >
                 <div class="page-content">
 
                     <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin" >
@@ -282,6 +282,8 @@ class Home extends React.Component {
 
 
                                     <div>
+                                        <div id="flotChart1" className="flot-chart mygraph" style={{height: "400px"}}/>
+
                                         <Graph/>
                                     </div>
                                     <div className="row">
