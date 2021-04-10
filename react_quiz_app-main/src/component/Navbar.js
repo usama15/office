@@ -31,7 +31,7 @@ const Navbar = () => {
                         </li>
                         <Link exact to='/'className='il'>
                             <li className="nav-item">
-                                <a href="" className="nav-link">
+                                <a href="" className="nav-link ho">
                                     {/*<i className="link-icon" href={icon1} />*/}
                                     <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                          fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"

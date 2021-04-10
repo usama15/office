@@ -12,7 +12,7 @@ import Contact from './pages/Contact'
 import Detail from './pages/Detail'
 import Privacy from './pages/Privacy'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Footer from "./component/Footer";
 
 
 class App extends React.Component{
@@ -27,6 +27,7 @@ class App extends React.Component{
                         <Route path="/detail" component={Detail}/>
                         <Route path="/privacy" component={Privacy}/>
                     </Switch>
+                <Footer/>
             </Router>
         )
     }

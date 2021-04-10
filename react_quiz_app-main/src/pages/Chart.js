@@ -42,8 +42,8 @@ class BarChart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-                width="100%"
-              height='300'
+                // width="100%"
+              // height='300'
             />
           </div>
         </div>
@@ -129,8 +129,8 @@ class LineBar extends Component {
             <Chart
               options={this.state.options}
               series={this.state.series}
-              width="100%"
-              height='300'
+              // width="100%"
+              // height='300'
               // style={{color:'#E91E63' }}
             />
           </div>
@@ -254,8 +254,8 @@ class AreaChart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-                width="100%"
-              height='300'
+                // width="100%"
+              // height='300'
             />
           </div>
         </div>
@@ -295,7 +295,7 @@ class AreaChart extends Component {
                   <div className="card">
                     <div className="card-body">
                       <h6 className="card-title">Area chart</h6>
-                      <AreaChart/>
+                      <AreaChart width="100%"/>
                     </div>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ class AreaChart extends Component {
                   <div className="card">
                     <div className="card-body">
                       <h6 className="card-title">Donut chart</h6>
-                      <DonutChart style={{marginLeft:"300px"}}/>
+                      <DonutChart  style={{marginLeft:"300px"}}/>
                     </div>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ class AreaChart extends Component {
                   <div className="card">
                     <div className="card-body">
                       <h6 className="card-title">Line chart</h6>
-                      <LineBar />
+                      <LineBar width="100%" />
                     </div>
                   </div>
                 </div>
@@ -321,7 +321,7 @@ class AreaChart extends Component {
                   <div className="card">
                     <div className="card-body">
                       <h6 className="card-title">Bar chart</h6>
-                      <BarChart/>
+                      <BarChart width="100%"/>
                     </div>
                   </div>
                 </div>

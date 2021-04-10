@@ -14,13 +14,13 @@ class Donut extends Component {
          stroke: {
            colors: ['rgba(0,0,0,0)']
          },
-        colors: ["#f77eb9", "#7ee5e5","#4d8af0","#fbbc06"],
+        colors: ["#3b06fb","#947ef7", "#7ee5e5","#4d8af0","#fb0637"],
         legend: {
            position: 'top',
           horizontalAlign: 'center'
         },
       },
-    series: [44, 55, 13, 33]
+    series: [44, 55, 13, 33,]
       // labels: ['A', 'B', 'C', 'D', 'E']
     }
   }

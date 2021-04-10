@@ -18,14 +18,9 @@ class Graph extends Component {
         xaxis: {
           show:true,
           categories: ['1 Jan','   2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan'],
-        // color: 'rgb(250,250,247)',
-          // reserveSpace: false
-
          },
         yaxis:{
           show: true,
-          color: 'rgb(255,255,252)',
-          categories: ['1 Jan','   2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan'],
 
 
         },

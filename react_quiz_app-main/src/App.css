@@ -54,10 +54,20 @@ position: center !important;
   border-right: 1px solid #172340 !important;
   background-color: #0c1427;
 }
+
+
+.ho:hover{
+    color:#727cf5;
+
+}
+
 .il{
   /*list-style:outside;*/
   list-style-type: none;
   /*list-style-position: outside;*/
   /*text-decoration: none;*/
   /*list-style-position: ;*/
+}
+ul li::before{
+  margin-right: 20px;
 }
