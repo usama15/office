@@ -39,6 +39,25 @@
 .main{
 margin-left: 260px;
   margin-top: 80px;
-  position: relative;
+  position: relative !important;
+}
+.main2{
+  /*position: s;*/
+  /*margin-left: 270px;*/
+/*margin-top: 80px;*/
 }
 
+
+.nav1{
+
+position: center !important;
+  border-right: 1px solid #172340 !important;
+  background-color: #0c1427;
+}
+.il{
+  /*list-style:outside;*/
+  list-style-type: none;
+  /*list-style-position: outside;*/
+  /*text-decoration: none;*/
+  /*list-style-position: ;*/
+}

@@ -12,6 +12,7 @@ import i10 from '../assets/10.png'
 import ApexCharts from 'apexcharts'
 import Graph from "../component/graph";
 import '../App.css'
+import Donut from "../component/Donut";
 
 class Home extends React.Component {
     render() {
@@ -279,12 +280,11 @@ class Home extends React.Component {
                                     <div class="row">
                                         <h6 id="newfont" style={{ color: "green", marginBottom: "10px" }}>Bullish</h6>
                                     </div>
-
-
+                                    {/*<canvas id="myChart" width="400" height="400"></canvas>*/}
                                     <div>
-                                        <div id="flotChart1" className="flot-chart mygraph" style={{height: "400px"}}/>
+                                        {/*<div id="flotChart1" className="flot-chart mygraph" />*/}
 
-                                        <Graph/>
+                                        <Graph  style={{height: "400px"}} />
                                     </div>
                                     <div className="row">
 
@@ -309,7 +309,7 @@ class Home extends React.Component {
                             <div class="card">
                                 <div class="card-body">
                                     <h6 class="card-title">MOST ACTIVE</h6>
-                                    <div id="apexDonut" />
+                                    <Donut/>
                                 </div>
                             </div>
                         </div>

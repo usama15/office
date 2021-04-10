@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
 class Graph extends Component {
+
   constructor(props) {
     super(props);
 
@@ -10,41 +11,38 @@ class Graph extends Component {
         chart: {
           id: "bar",
           type:'line',
+          background: "linear-gradient(180deg, rgba(0, 255, 76,0.3) 10%, rgba(255, 0, 0,0.3) 100%)"
         },
+        colors: ["#727cf5"],
+
         xaxis: {
-          // categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-        },
+          show:true,
+          categories: ['1 Jan','   2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan'],
+        // color: 'rgb(250,250,247)',
+          // reserveSpace: false
+
+         },
         yaxis:{
           show: true,
-          color: "rgba(0,0,0,0.06)",
-          ticks: [
-            [0, "-100%"],
-            [10, "-75%"],
-            [20, "-50%"],
-            [30, "-25%"],
-            [40, "0%"],
-            [50, "+25%"],
-            [60, "+50%"],
-            [70, "+75%"],
-            [80, "+100%"],
-          ],
-          // tickColor: CanvasGradient.apply(),
-          min: 0,
-          max: 80,
-          font: {
-            size: 11,
-            weight: "600",
-            // color: colors.muted,
-          },
-        }
+          color: 'rgb(255,255,252)',
+          categories: ['1 Jan','   2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan'],
+
+
+        },
+         grid: {
+      borderColor: "rgba(77, 138, 240, .1)",
+         },
+        stroke: {
+            curve: 'smooth',
+        },
+
       },
       series: [
         {
-          // name: "series",
-          // data: [30, 40, 45, 50, 49, 60, 70, 91]
+          name: "series",
+          data: [50 , 35, 86, 52, 22, 46, 15, -10, 65],
         },
-
-      ]
+      ],
     };
   }
 
@@ -56,9 +54,9 @@ class Graph extends Component {
             <Chart
               options={this.state.options}
               series={this.state.series}
-              type="line"
-              width="500"
-              height='300'
+              width="100%"
+              height='450'
+              // style={{color:'#E91E63' }}
             />
           </div>
         </div>

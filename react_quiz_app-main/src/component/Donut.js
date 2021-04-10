@@ -29,7 +29,7 @@ class Donut extends Component {
 
     return (
       <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
+        <Chart  options={this.state.options} series={this.state.series} type="donut" width="100%" />
       </div>
     );
   }

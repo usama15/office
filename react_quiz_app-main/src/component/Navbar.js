@@ -2,32 +2,46 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import stockape_logo from '../assets/stockape_logo.png'
 import './Style.css'
-import './style.css.map'
+// import './style.css.map'
+import '../App.css'
 
 const Navbar = () => {
     return (
-        <div className="main-wrapper">
+        <div className="main-wrapper ">
             <nav className='sidebar'>
                 <div className='sidebar-header'>
                     <a href='#' className='sidebar-brand' style={{ backgroundColor: 'black' }}>
                         <img src={stockape_logo} width="130px" alt='img' />
                     </a>
-                    <div className="sidebar-toggler not-active">
-                        <span />
-                        <span />
-                        <span />
-                    </div>
+                        <div className="sidebar-toggler  not-active">
+                            <span />
+                            <span />
+                            <span />
+                        </div>
+                    {/*<button className="siderbar-toggler" type="button" data-toggle="collapse"*/}
+                    {/*        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"*/}
+                    {/*        aria-expanded="false" aria-label="Toggle navigation">*/}
+                    {/*    <span className="sidebar-toggler"></span>*/}
+                    {/*</button>*/}
                 </div>
-                <div>
-                    <ul>
+                <div className='nav1' style={{height:'100%'}}>
+                    <ul className='il '>
                         <li className="nav-item nav-category" style={{ textAlign: "left" }}>
                             Main
                         </li>
-                        <Link exact to='/'>
+                        <Link exact to='/'className='il'>
                             <li className="nav-item">
                                 <a href="" className="nav-link">
-                                    <i className="link-icon" data-feather="box" />
-                                    <span className="link-title">Dashboard</span>
+                                    {/*<i className="link-icon" href={icon1} />*/}
+                                    <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                         stroke-linejoin="round" className="feather feather-box link-icon">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                    </svg>
+                                    <span className="link-title" style={{color:'white',marginLeft:'10px'}}>Dashboard</span>
                                 </a>
                             </li>
                         </Link>
@@ -37,32 +51,56 @@ const Navbar = () => {
                         <Link to="/chart">
                             <li className="nav-item">
                                 <a href="" className="nav-link">
-                                    <i className="link-icon" data-feather="pie-chart" />
-                                    <span className="link-title">Chart</span>
+                                    {/*<i className="link-icon" data-feather="pie-chart" />*/}
+                                    <svg style={{color:"white"}} className="link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                         stroke-linejoin="round" className="feather feather-pie-chart link-icon">
+                                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                                        <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                                    </svg>
+                                    <span className="link-title" style={{color:'white',marginLeft:'10px'}}>Chart</span>
                                 </a>
                             </li>
                         </Link>
                         <Link to="/contact">
                             <li className="nav-item">
                                 <a href="" className="nav-link">
-                                    <i className="link-icon" data-feather="message-square" />
-                                    <span className="link-title">Contact</span>
+                                    {/*<i className="link-icon" data-feather="message-square" />*/}
+                                    <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                         stroke-linejoin="round" className="feather feather-message-square link-icon">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                    <span className="link-title" style={{color:'white',marginLeft:'10px'}}>Contact</span>
                                 </a>
                             </li>
                         </Link>
                         <Link to="/details">
                             <li className="nav-item">
                                 <a href="" className="nav-link">
-                                    <i className="link-icon" data-feather="layout" />
-                                    <span className="link-title">Details</span>
+                                    {/*<i className="link-icon" data-feather="layout" />*/}
+                                    <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                         stroke-linejoin="round" className="feather feather-layout link-icon">
+                                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                                        <line x1="3" y1="9" x2="21" y2="9"/>
+                                        <line x1="9" y1="21" x2="9" y2="9"/>
+                                    </svg>
+                                    <span className="link-title" style={{color:'white',marginLeft:'10px'}}>Details</span>
                                 </a>
                             </li>
                         </Link>
                         <Link to="/privacy">
                             <li className="nav-item">
                                 <a href="" className="nav-link">
-                                    <i className="link-icon" data-feather="unlock" />
-                                    <span className="link-title">Privacy</span>
+                                    {/*<i className="link-icon" data-feather="unlock" />*/}
+                                    <svg style={{color:"white"}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                         stroke-linejoin="round" className="feather feather-unlock link-icon">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                        <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                                    </svg>
+                                    <span className="link-title" style={{marginLeft:'10px', color:'white'}}>Privacy</span>
                                 </a>
                             </li>
                         </Link>
