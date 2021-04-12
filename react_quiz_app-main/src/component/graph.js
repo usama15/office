@@ -14,15 +14,13 @@ class Graph extends Component {
           background: "linear-gradient(180deg, rgba(0, 255, 76,0.3) 10%, rgba(255, 0, 0,0.3) 100%)"
         },
         colors: ["#727cf5"],
-
         xaxis: {
           show:true,
           categories: ['1 Jan','   2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan'],
          },
         yaxis:{
           show: true,
-
-
+          categories: ["-1", "1"]
         },
          grid: {
       borderColor: "rgba(77, 138, 240, .1)",
@@ -35,7 +33,7 @@ class Graph extends Component {
       series: [
         {
           name: "series",
-          data: [50 , 35, 86, 52, 22, 46, 15, -10, 65],
+          data: [50 , 35, 86, 52, 22, 46, 15, 100, 65],
         },
       ],
     };

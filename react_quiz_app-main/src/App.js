@@ -10,7 +10,7 @@ import Home from "./pages/Home"
 import Chart from './pages/Chart'
 import Contact from './pages/Contact'
 import Detail from './pages/Detail'
-import Privacy from './pages/Privacy'
+import Privacy from './pages/Detail'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./component/Footer";
 

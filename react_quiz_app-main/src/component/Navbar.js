@@ -75,7 +75,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                         </Link>
-                        <Link to="/details">
+                        <Link to="/detail">
                             <li className="nav-item">
                                 <a href="" className="nav-link">
                                     {/*<i className="link-icon" data-feather="layout" />*/}
